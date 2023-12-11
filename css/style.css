@@ -1,0 +1,696 @@
+@import url(https://db.onlinewebfonts.com/c/ca5cc124558d2c5cddad2191bb6a5615?family=WTC+Our+Bodoni+W03+Regular);
+@import url('https://fonts.cdnfonts.com/css/futura-lt');
+
+/*generale + home*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "WTC Our Bodoni W03 Regular", serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+b {
+    font-family: "WTC Our Bodoni W03 Regular", serif;
+}
+
+p {
+    font-family: 'Futura LT', sans-serif;
+}
+
+.sito {
+    display: flex;
+    flex-direction: column;
+}
+
+.primariga {
+    display: flex;
+    justify-content: center;
+}
+
+.div_logo {
+    border-bottom: 0.05em solid;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+    width: 80%;
+}
+
+.logo {
+    width: 19em;
+}
+
+.navbar_social {
+    display: flex;
+    list-style-type: none;
+}
+
+.social {
+    margin: 0.5% 1% 0% 1%;
+}
+
+.navbar {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    opacity: 0.9;
+    padding: 0.3%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar_lista {
+    padding: 1% 2%;
+}
+
+.navbar_el {
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.05s;
+}
+
+.navbar_el:hover {
+    color: #03638A;
+}
+
+.diverso {
+    padding: 0.7em 1em;
+    background-color: #03638A;
+    color: white;
+    border-radius: 10px;
+}
+
+.diverso:hover {
+    background-color: #1385b2;
+    color:white;
+}
+
+.logo_navbar {
+    width: 2em;
+}
+
+/*slideshow*/
+.slide {
+    display: none;
+}
+
+.plant-carousel {
+    align-items: center;
+    display: flex; 
+    flex-basis: row wrap;
+    height: 50%;
+    margin: auto;
+    min-height: 20em;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.plant-1, .plant-2, .plant-3 {
+    background-attachment: fixed;
+    background-position: center center;
+    /*height: 30em;*/
+    object-fit: contain;
+    width: 100%; 
+}
+
+.prev, .next {
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    margin-top: -20px;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    transition: opacity 0.05s;
+    width: 15px;
+}
+
+.next {
+    border-bottom: 5px solid #03638A;
+    border-right: 5px solid #03638A;
+    right: 20px;
+    transform: rotate(-45deg);
+}
+
+.prev {
+    border-bottom: 5px solid #03638A;
+    border-left: 5px solid #03638A;
+    left: 20px;
+    transform: rotate(45deg);
+}
+
+.next:hover, .prev:hover {
+    opacity: 1;
+}
+
+.dot {
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+    height: 15px;
+    margin: 0 4px;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+    width: 15px;
+}
+  
+.dot-container{
+    bottom: 1em;
+    display: flex;
+    flex-basis: row wrap;
+    justify-content: flex-start;
+    margin: 1em;
+    position: absolute;
+    width: 100%;
+}
+
+.active, .dot:hover {
+    opacity: 0.8;
+}
+
+.fade {
+    margin: auto;
+    animation-duration: 1.5s;
+    animation-name: fade;
+}
+   
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.banner {
+    background-color: #03638A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 2em;
+    text-align: center;
+}
+
+.grossino {
+    font-size: 1.1em;
+}
+
+.bianco {
+    color:white;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.titolo_home {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.riga_home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4em 0 5em 0;
+    margin: 0 5%;
+}
+
+.blocco_home {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 2.5%;
+    flex-grow: 1;
+}
+
+.bottone_home {
+    margin: auto;
+    padding-bottom: 3em;
+}
+
+/*footer*/
+.footer {
+    margin-top: auto;
+}
+
+.navbar_footer {
+    background-color: rgb(232, 232, 232);
+    flex-direction: column;
+    list-style-type: none;
+    margin: 2% 0% 0% 0%;
+    padding: 1% 0;
+}
+
+.footer_lista {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.4% 3%;
+}
+
+.footer_el {
+    color: black;
+    text-decoration: none;
+}
+
+/*contatti*/
+.logo_contatti {
+    margin-top: 2em;
+    width: 13em;
+}
+
+.titolo {
+    margin-left: 5%;
+    margin-top: 0;
+}
+
+.riga {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.colonna {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.link {
+    color: black;
+    cursor: pointer;
+    transition: color 0.05s;
+}
+
+.link:hover {
+    color: #03638A;
+}
+
+/*Chi siamo*/
+.stacco {
+    margin-top: 4em;
+}
+
+.foto_fondazione {
+    width: 100%;
+}
+
+.allineamento_basso {
+    align-items: center;
+}
+
+/*eventi*/
+.fascia {
+    background-color: rgb(196, 221, 255);
+    margin: 2em 0;
+    padding: 2em 0;
+}
+
+.luogo_evento {
+    width: 30%;
+}
+
+.colonna_eventi {
+    margin-bottom: 2em;
+    width: 50%;
+}
+
+.titolo_eventi {
+    margin: 0;
+}
+
+.giustificato {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.seconda_riga {
+    visibility: hidden;
+}
+
+/*newsletter*/
+.campo {
+    height: 1.5em;
+    margin: 1em 0;
+    width: 12em;
+}
+
+.bottone {
+    background-color: #227ea2;
+    border: 0.05em solid #03638A;
+    color: white;
+    font-family: "WTC Our Bodoni W03 Regular", serif;
+    font-size: 1.1em;
+    height: 3em;
+    margin-top: 0.8em;
+    Width: 7em;
+}
+
+.bottone:hover {
+    background-color: #9ed2e7;
+    cursor: pointer;
+}
+
+.colonna_newsletter {
+    margin-bottom: 2em;
+    margin-left: 5%;
+    width: 50%;
+}
+
+.bottone_largo {
+    width: 10em;
+    border-radius: 10px;
+    background-color: white;
+    color: #03638A;
+    font-weight: 600;
+}
+
+/*autori*/
+.wrap {
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1% 5%;
+}
+
+.non_pallino {
+    cursor: pointer;
+    font-size: 1.1em;
+    border-left: 0.1em solid black;
+    height: 2.5em;
+    line-height: 2.5em;
+    padding-left: 1em;
+}
+
+.non_pallino:hover {
+    color: #03638A;
+}
+
+.pallino {
+    background-color: #03638A;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    height: 3em;
+    line-height: 3em;
+    margin-right: 1em;
+    text-align: center;
+    width: 3em;
+}
+
+.separatore {
+    border-bottom: 0.05em solid;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.7em;
+    width: 20%;
+}
+
+.lista_wrap {
+    height: 50em;
+    flex-wrap: wrap;
+}
+
+.link_autore {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.05s;
+}
+
+.link_autore:hover {
+    color: #03638A;
+}
+
+.titolo_autore {
+    margin-left: 10%;
+}
+
+.img_autore {
+    width: 10em;
+}
+
+.div_autore {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    margin: 2em 10% 0 10%;
+}
+
+.immagine_autore {
+    margin-right: 5%;
+}
+
+.testo_autore {
+    margin-right: 5%;
+}
+
+.primo_paragrafo {
+    margin: 0;
+}
+
+/*catalogo*/
+.colore1 {
+    background-color: rgb(255, 239, 196);
+}
+
+.colore2 {
+    background-color: rgb(203, 255, 196);
+}
+
+.colore3 {
+    background-color: rgb(196, 221, 255);
+    background-color: #b3d1dd;
+}
+
+.colore4 {
+    background-color: rgb(196, 243, 255);
+}
+
+.colore5 {
+    background-color: #03638A;
+}
+
+.colonna_catalogo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+    margin-top: 2%;
+}
+
+.primariga_catalogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10% 0 5%;
+    padding-top: 1%;
+}
+
+.descrizione_catalogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10% 0 5%;
+}
+
+.no_margine {
+    margin-top: 0.5em;
+}
+
+.bottone_catalogo {
+    padding: 0.6em;
+    border: 0.05em solid;
+    font-family: 'Futura LT', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.bottone_catalogo:hover {
+    color: #03638A;
+}
+
+.riga_catalogo {
+    margin: 1% 5%;
+}
+
+.blocco_catalogo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 5%;
+    flex-grow: 1;
+}
+
+.img_libro {
+    object-fit: contain;
+    margin-right: 2%;
+    width: 9.8em;
+}
+
+.bordo {
+    border: 0.05em solid;
+}
+
+.bordo_colore {
+    border: 0.05em solid rgb(141, 141, 157);
+}
+
+.testo_catalogo {
+    display: flex;
+    flex-direction: column;
+    width: 12em;
+    font-size: 0.9em;
+}
+
+.nome_autore {
+    margin: 0;
+    font-family: "WTC Our Bodoni W03 Regular", serif;
+    font-weight: bold;
+    font-size: 1em;
+    opacity: 0.7;
+}
+
+.titolo_libro {
+    font-family: "WTC Our Bodoni W03 Regular", serif;
+    font-weight: 600;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.col_altre_collane {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.riga_altre_collane {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.blocco_altre_collane {
+    margin: 2% 3.3%;
+    width: 20%;
+}
+
+/*nome della rosa*/
+
+.div_libro {
+    align-items: flex-start;
+    display: flex;
+    width: 80%;
+    margin:auto;
+    padding-top: 3em;
+}
+
+.immagine_libro {
+    margin: 0 5%;
+}
+.img_copertina {
+    width: 20em;
+}
+
+/*test*/
+.centrato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testo_centrato {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.quadratone {
+    border-radius: 30px;
+    width: 40em;
+    height: 32em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #013c53;
+    color: white;
+}
+
+.testo_quadratone {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.bottoni {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.prev_test, .next_test {
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    transition: opacity 0.05s;
+    top: -3em;
+    margin: 0 3em;
+    cursor: pointer;
+    top: 28em;
+}
+
+.prev_test {
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    transform: rotate(45deg);
+}
+
+.next_test {
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(-45deg);
+}
+
+.bottone_centrato {
+    margin: auto;
+    position: relative;
+    top: 12em;
+}
+
+.risp {
+    background-color: white;
+    border: 0.05em solid;
+    border-radius: 10px;
+    color: #013c53;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0.5em;
+    user-select: none;
+}
+
+.risp:hover {
+    cursor: pointer;
+}
+
+.dom1, .dom2, .dom3, .dom4, .dom5, .dom6 {
+    display: none;
+}
+
+/*risultato*/
+.risultato {
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.spazio {
+    margin-right: 1em;
+}

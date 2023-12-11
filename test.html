@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = "it">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/test.js"></script>
+        <title>La Nave di Teseo - Quiz</title>
+    </head>
+    <body>
+        <ul class = "navbar_social">
+            <li class = "social">
+                <a href = "https://www.facebook.com/lanavediteseoed?fref=photo" target = "_blank">
+                    <img src = "img/fb.svg">
+                </a>
+            </li>
+            <li class = "social">
+                <a href = "https://www.instagram.com/lanavediteseo/" target = "_blank">
+                    <img src = "img/ig.svg">
+                </a>
+            </li>
+            <li class = "social">
+                <a href = "https://twitter.com/lanavediteseoed" target = "_blank">
+                    <img src = "img/x.svg">
+                </a>
+            </li>
+            <li class = "social">
+                <a href = "https://tiktok.com/lanavediteseoed" target = "_blank">
+                    <img src = "img/tik.svg">
+                </a>
+            </li>
+            <li class = "social">
+                <a href = "https://whatsapp.com/lanavediteseo" target = "_blank">
+                    <img src = "img/whats.svg">
+                </a>
+            </li>
+        </ul>
+        
+        <div class = "primariga">
+            <div class = "div_logo">
+                <img class = "logo_contatti" src = "img/logo.svg">
+            </div>
+        </div>
+
+        <ul class = "navbar">
+            <li class = "navbar_lista">
+                <a class = "navbar_el" href = "index.html">
+                    <img class = "logo_navbar" src = "img/logo_piccolo.svg">
+                </a>
+            </li>
+            <li class = "navbar_lista">
+                <a class = "navbar_el" href = "chisiamo.html">Chi siamo</a>
+            </li>
+            <li class = "navbar_lista">
+                <a class = "navbar_el" href = "catalogo.html">Catalogo</a>
+            </li>
+            <li class = "navbar_lista">
+                <a class = "navbar_el" href = "autori.html">Autori</a>
+            </li>
+            <li class = "navbar_lista">
+                <a class = "navbar_el" href = "eventi.html">Eventi</a>
+            </li>
+            <li class = "navbar_lista">
+                <a class = "navbar_el" href = "https://lanavediteseo.eu/negozio-ebook-la-nave-di-teseo/" target = "_blank">Negozio eBook</a>
+            </li>
+            <li class = "navbar_lista">
+                <a class = "navbar_el" href = "newsletter.html">Newsletter</a>
+            </li>
+            <li class = "navbar_lista">
+                <a class = "navbar_el diverso" href = "test.html">Fai il quiz</a>
+            </li>
+            <li class = "navbar_lista">
+                <a class = "navbar_el" href = "contatti.html">Contatti</a>
+            </li>
+        </ul>
+
+        <h2 class = "titolo_home">E tu, che libro sei?</h2>
+        <div class = "centrato">
+            <p class = "testo_centrato">Se non sai cosa leggere o hai voglia di cambiare genere, ecco il test su misura per te.<br/>Rispondi a poche semplici domande e scopri i titoli che non dovrebbero mancare nella tua libreria!</p>
+        </div>
+
+        <div class = "quadratone">
+            <div class = "bottoni" id = "bottoni">
+                <a class = "prev_test" onclick="prev()"></a>
+                <a class = "next_test" onclick="next()"></a>
+            </div>
+            <div class = "testo_quadratone" id = "box">
+                <input class = "bottone bottone_largo bottone_centrato" id = "box_bottone" type = "button" value = "Inizia" onclick="startTest()">
+                <h3 class = "dom1">Cosa ti piace di più? (1/6)</h3>
+                <p class = "dom1 risp" onclick = "clicked(this)">Leggere o guardare storie per evadere dalla quotidianità</p>
+                <p class = "dom1 risp" onclick = "clicked(this)">Praticare sport, mangiare sano e stare all’aria aperta</p>
+                <p class = "dom1 risp" onclick = "clicked(this)">Seguire i personaggi del mondo dello spettacolo</p>
+                <p class = "dom1 risp" onclick = "clicked(this)">Seguire talk di politica, cronaca e attualità</p>
+                <h3 class = "dom2">Cosa leggi di solito? (2/6)</h3>
+                <p class = "dom2 risp" onclick = "clicked(this)">Narrativa</p>
+                <p class = "dom2 risp" onclick = "clicked(this)">Saggistica</p>
+                <p class = "dom2 risp" onclick = "clicked(this)">Poesia</p>
+                <h3 class = "dom3">Che argomenti ti interessano di più? (3/6)</h3>
+                <p class = "dom3 risp" onclick = "clicked(this)">Biografie e autobiografie</p>
+                <p class = "dom3 risp" onclick = "clicked(this)">Azione e avventura</p>
+                <p class = "dom3 risp" onclick = "clicked(this)">Sentimenti e relazioni</p>
+                <p class = "dom3 risp" onclick = "clicked(this)">Thriller e gialli</p>
+                <p class = "dom3 risp" onclick = "clicked(this)">Horror e noir</p>
+                <p class = "dom3 risp" onclick = "clicked(this)">Fantasy e fantascienza</p>
+                <p class = "dom3 risp" onclick = "clicked(this)">Romanzo di formazione</p>
+                <h3 class = "dom4">Preferisci... (4/6)</h3>
+                <p class = "dom4 risp" onclick = "clicked(this)">Storie vere o ispirate alla cronaca</p>
+                <p class = "dom4 risp" onclick = "clicked(this)">Storie che fanno riflettere</p>
+                <p class = "dom4 risp" onclick = "clicked(this)">Storie dal taglio umoristico</p>
+                <p class = "dom4 risp" onclick = "clicked(this)">Storie emozionanti</p>
+                <p class = "dom4 risp" onclick = "clicked(this)">Storie erotiche</p>
+                <p class = "dom4 risp" onclick = "clicked(this)">Classici</p>
+                <h3 class = "dom5">Preferisci... (5/6)</h3>
+                <p class = "dom5 risp" onclick = "clicked(this)">Storie ambientate nella contemporaneità</p>
+                <p class = "dom5 risp" onclick = "clicked(this)">Storie ambientate nel passato</p>
+                <p class = "dom5 risp" onclick = "clicked(this)">Storie ambientate nel futuro</p>
+                <h3 class = "dom6">Preferisci... (6/6)</h3>
+                <p class = "dom6 risp" onclick = "clicked(this)">Autori italiani</p>
+                <p class = "dom6 risp" onclick = "clicked(this)">Autori stranieri</p>
+            </div>
+        </div>
+        
+        <footer class = "footer">
+            <ul class = "navbar_footer">
+                <li class = "footer_lista">
+                    <a class = "footer_el" href ="https://lanavediteseo.eu/foreign-rights/" target="_blank">Foreign Rights</a>
+                </li>
+                <li class = "footer_lista">
+                    <a class = "footer_el" href ="manoscritti.html" target="_blank">Manoscritti e curriculum</a>
+                </li>
+                <li class = "footer_lista">
+                    <a class = "footer_el" href ="https://lanavediteseo.eu/privacy-e-cookie-policy/" target="_blank">Privacy e Cookie Policy</a>
+                </li>
+                <li class = "footer_lista">
+                    <a class = "footer_el" href ="https://lanavediteseo.eu/informativa-newsletter/" target="_blank">Informativa Iscrizione Newsletter</a>
+                </li>
+            </ul>
+        </footer>    
+    </body>
+</html>
